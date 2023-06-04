@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>English Quiz</title>
+    </head>
+    <body>
+        <h1>English Quiz</h1>
+        <form method="POST">
+            <p>{{ question }}</p>
+            <input type="text" name="answer" required autocomplete="off">
+            <input type="hidden" name="correct_answer" value="{{ correct_answer }}">
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
