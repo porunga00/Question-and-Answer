@@ -7,8 +7,8 @@ app = Flask(__name__)
 app.secret_key = 'your_secret_key'  # セキュリティのためのシークレットキー
 
 # CSVファイルから単語とフレーズを読み込む
-words = pd.read_csv('words.csv').to_dict(orient='records')
-phrases = pd.read_csv('phrases.csv').to_dict(orient='records')
+words = pd.read_csv('data/Eng.words.csv').to_dict(orient='records')
+phrases = pd.read_csv('data/Eng.phrases.csv').to_dict(orient='records')
 
 @app.route('/', methods=['GET'])
 def main():
